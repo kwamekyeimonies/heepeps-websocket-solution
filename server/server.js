@@ -20,11 +20,7 @@ ws.on("connection", (ws) => {
 
     ws.on("message", (message) => {
         console.log(`Payload received from the server @${currentTime}: ${message}`)
-        // clients.forEach((client) => {
-        //     if (client !== ws) {
-        //         client.send(message)
-        //     }
-        // })
+        
         publishClientMessages(message, ws)
     })
 })

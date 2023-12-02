@@ -17,6 +17,9 @@ Websocket(Ws)
 
 The server directory contains the main server whilst the client directory is a sample client
 
-How to run the application
+# How to run the application
 In your terminal just make sure you are in the right directory and just type:
- npm start
+-   Install the packages by:
+    -   npm install
+-   Run the application by:
+    -   npm start
