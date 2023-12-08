@@ -1,10 +1,10 @@
 const webSocket = require("ws");
 
-const serverURL = "ws://127.0.0.1:4000"
-const ws = new webSocket(serverURL);
+const serverAddress = "ws://127.0.0.1:4000"
+const ws = new webSocket(serverAddress);
 
 ws.on('open', () => {
-    console.log(`Connected to server ${serverURL}`);
+    console.log(`Connected to server ${serverAddress}`);
 
     ws.send("Hello server")
 })

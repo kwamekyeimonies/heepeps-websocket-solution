@@ -20,7 +20,6 @@ ws.on("connection", (ws) => {
 
     ws.on("message", (message) => {
         console.log(`Payload received from the server @${currentTime}: ${message}`)
-        
         publishClientMessages(message, ws)
     })
 })
